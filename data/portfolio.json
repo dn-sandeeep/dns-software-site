@@ -279,5 +279,36 @@
         "Git / GitHub & Figma"
       ]
     }
+  ],
+  "siteUrl": "https://dns-software-site.vercel.app",
+  "faq": [
+    {
+      "q": "How much does an app cost?",
+      "a": "It depends on the features, screens and integrations you need. Share your requirement through the form or WhatsApp and we send a clear roadmap and estimate, usually within a day. The first consultation is free."
+    },
+    {
+      "q": "How long does it take to build an app?",
+      "a": "Timelines depend on the scope. After the first discussion we give you a timeline, and during development you get regular builds to test on your own phone."
+    },
+    {
+      "q": "Do you support the app after launch?",
+      "a": "Yes. We handle the Play Store release, and after launch we take care of version updates, bug fixes and keeping the app healthy."
+    },
+    {
+      "q": "Can you improve or rebuild my existing app?",
+      "a": "Yes. We modernize older Java/XML Android apps into Kotlin and Jetpack Compose, update them for the latest Android versions and reduce crashes and slowness."
+    },
+    {
+      "q": "Will the app work without internet?",
+      "a": "For business apps we use an offline-first design: data is saved on the phone and syncs to the cloud when the internet is back, so work on the shop or factory floor never stops."
+    },
+    {
+      "q": "Do you work with clients outside Madhya Pradesh?",
+      "a": "Yes. We work remotely with clients across India and abroad, and visit on-site for business clients when needed."
+    },
+    {
+      "q": "Do you build iPhone (iOS) apps?",
+      "a": "We specialise in native Android apps built with Kotlin and Jetpack Compose. Tell us your plans and we will suggest the right approach."
+    }
   ]
 }
