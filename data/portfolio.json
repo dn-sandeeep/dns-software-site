@@ -171,6 +171,7 @@
       "features": [
         "Ends manual phone muting in offices, temples / mosques, classrooms and meetings",
         "Automatic Silent / Vibrate / Normal switching from geofencing and Wi-Fi triggers",
+        "Important contacts can still ring through while the phone is silent",
         "Battery-friendly background work (WorkManager, Broadcast Receivers)",
         "Correct handling of background-location and Do Not Disturb permissions"
       ],
@@ -181,7 +182,12 @@
         "WorkManager",
         "Material 3"
       ],
-      "screens": [],
+      "screens": [
+        "/screens/silent-zone-1.jpg",
+        "/screens/silent-zone-2.jpg",
+        "/screens/silent-zone-3.jpg",
+        "/screens/silent-zone-4.jpg"
+      ],
       "links": {
         "playStore": "https://play.google.com/store/apps/details?id=com.sandeep.silentzone",
         "github": "https://github.com/dn-sandeeep/Silent-Zone"
