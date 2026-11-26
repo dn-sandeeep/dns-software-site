@@ -192,7 +192,7 @@
       "slug": "groow",
       "name": "Groow",
       "category": "Retail · Billing & Stock",
-      "client": "Shop management app",
+      "client": "Published on Google Play",
       "accent": "#4FC3F7",
       "summary": "Billing, stock and udhaar (customer credit) for small shops — all from one phone.",
       "description": "Groow lets shop owners run their counter from a phone: make bills, keep stock up to date and track udhaar (customer credit) in one place. A fresh light and dark redesign is on the way.",
@@ -209,10 +209,10 @@
       ],
       "screens": [],
       "links": {
-        "playStore": "",
+        "playStore": "https://play.google.com/store/apps/details?id=com.sandeep.groow",
         "github": ""
       },
-      "type": "business"
+      "type": "live"
     }
   ],
   "process": [
