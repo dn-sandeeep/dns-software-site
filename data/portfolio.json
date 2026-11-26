@@ -117,7 +117,14 @@
         "StateFlow",
         "Native PDF"
       ],
-      "screens": [],
+      "screens": [
+        "/screens/madhav-stone-1.jpg",
+        "/screens/madhav-stone-2.jpg",
+        "/screens/madhav-stone-3.jpg",
+        "/screens/madhav-stone-4.jpg",
+        "/screens/madhav-stone-5.jpg",
+        "/screens/madhav-stone-6.jpg"
+      ],
       "links": {
         "playStore": "",
         "github": "https://github.com/dn-sandeeep/Madhav-Stone-README"
