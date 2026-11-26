@@ -16,7 +16,12 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const p = findProject(slug);
   if (!p) return {};
-  return { title: `${p.name} — ${data.brand}`, description: p.summary };
+  return {
+    title: `${p.name} — ${data.brand}`,
+    description: p.summary,
+    alternates: { canonical: `/projects/${p.slug}` },
+    openGraph: { title: `${p.name} — ${data.brand}`, description: p.summary, url: `/projects/${p.slug}` },
+  };
 }
 
 export default async function ProjectPage({ params }) {
@@ -65,21 +70,19 @@ export default async function ProjectPage({ params }) {
         </ul>
       </section>
 
-      <section style={{ paddingTop: 10 }}>
-        <div className="section-head">
-          <div className="kicker">Screens</div>
-          <h2>A look inside</h2>
-        </div>
-        {p.screens.length > 0 ? (
+      {p.screens.length > 0 && (
+        <section style={{ paddingTop: 10 }}>
+          <div className="section-head">
+            <div className="kicker">Screens</div>
+            <h2>A look inside</h2>
+          </div>
           <div className="gallery">
             {p.screens.map((src) => (
               <img key={src} src={src} alt={`${p.name} screen`} loading="lazy" />
             ))}
           </div>
-        ) : (
-          <div className="empty-note">Screenshots coming soon.</div>
-        )}
-      </section>
+        </section>
+      )}
     </div>
   );
 }
