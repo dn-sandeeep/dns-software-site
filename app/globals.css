@@ -273,6 +273,12 @@ footer .container { display: flex; justify-content: space-between; flex-wrap: wr
 .copy-btn { font: inherit; font-size: 13px; font-weight: 600; color: var(--text); background: #1a222c; border: 1px solid var(--line); border-radius: 9px; padding: 7px 12px; cursor: pointer; }
 .copy-btn:hover { border-color: var(--teal); }
 .btn.full { justify-self: stretch; justify-content: center; }
+.form-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-actions .btn { justify-content: center; cursor: pointer; font: inherit; font-weight: 600; font-size: 15px; color: var(--text); }
+.form-actions .btn.primary { color: #04110f; }
+.form-actions .btn:only-child { grid-column: 1 / -1; }
+.form-note { color: var(--teal) !important; font-size: 14px; margin: 0 !important; }
+@media (max-width: 600px) { .form-actions { grid-template-columns: 1fr; } }
 
 /* reveal animation (pure CSS, no library) */
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }

@@ -151,7 +151,7 @@ export default function Home() {
                 )}
               </div>
             </div>
-            {links.email && <ContactForm email={links.email} options={formOptions} />}
+            <ContactForm email={links.email} whatsapp={links.whatsapp} options={formOptions} />
           </div>
         </div>
       </section>
