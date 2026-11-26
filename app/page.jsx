@@ -116,6 +116,23 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="faq">
+        <div className="container">
+          <div className="section-head">
+            <div className="kicker">FAQ</div>
+            <h2>Questions clients ask</h2>
+          </div>
+          <div className="faq">
+            {data.faq.map((f) => (
+              <details key={f.q}>
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="contact">
         <div className="container">
           <div className="contact-box contact-grid">

@@ -280,6 +280,34 @@ footer .container { display: flex; justify-content: space-between; flex-wrap: wr
 .form-note { color: var(--teal) !important; font-size: 14px; margin: 0 !important; }
 @media (max-width: 600px) { .form-actions { grid-template-columns: 1fr; } }
 
+/* FAQ */
+.faq { display: grid; gap: 12px; max-width: 860px; }
+.faq details { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 0 22px; transition: border-color 0.2s; }
+.faq details[open] { border-color: color-mix(in srgb, var(--teal) 45%, var(--line)); }
+.faq summary {
+  cursor: pointer; list-style: none; padding: 18px 0; font-weight: 600; font-size: 16.5px;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--teal); font-size: 22px; line-height: 1; transition: transform 0.2s; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { color: var(--muted); padding: 0 0 18px; font-size: 15.5px; max-width: 720px; }
+
+/* floating WhatsApp */
+.wa-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 50;
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #25d366; color: #04210f; font-weight: 700; font-size: 15px;
+  padding: 12px 18px 12px 14px; border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.wa-float:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(37, 211, 102, 0.35); }
+@media (max-width: 600px) {
+  .wa-float { padding: 14px; right: 16px; bottom: 16px; }
+  .wa-float span { display: none; }
+}
+
 /* reveal animation (pure CSS, no library) */
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 .rise { animation: rise 0.8s cubic-bezier(.2, .7, .2, 1) both; }
