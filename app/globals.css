@@ -184,7 +184,7 @@ footer .container { display: flex; justify-content: space-between; flex-wrap: wr
 .back:hover { color: var(--text); }
 .detail-hero h1 { font-size: clamp(40px, 6vw, 64px); margin: 10px 0 8px; }
 .detail-hero .desc { font-size: 18px; color: #c3cad4; margin-top: 18px; }
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
 .gallery img { width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--line); }
 .empty-note { color: var(--muted); border: 1px dashed var(--line); border-radius: var(--radius); padding: 28px; text-align: center; }
 
