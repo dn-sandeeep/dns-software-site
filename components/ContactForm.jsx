@@ -2,12 +2,14 @@
 
 import { useEffect, useState } from 'react';
 
-export default function ContactForm({ email, options }) {
+export default function ContactForm({ email, whatsapp, options }) {
   const all = [...options, 'Something else'];
+  const waDigits = (whatsapp || '').replace(/\D/g, '');
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
   const [type, setType] = useState(all[0]);
   const [message, setMessage] = useState('');
+  const [sent, setSent] = useState('');
 
   useEffect(() => {
     const onPick = (e) => {
@@ -17,11 +19,38 @@ export default function ContactForm({ email, options }) {
     return () => window.removeEventListener('pick-service', onPick);
   });
 
+  function enquiryText() {
+    return [
+      'Hello DNS Software, I have a project enquiry.',
+      '',
+      `Name: ${name}`,
+      `Phone / Email: ${contact}`,
+      `Project type: ${type}`,
+      '',
+      'Requirement:',
+      message,
+    ].join('\n');
+  }
+
+  function sendWhatsApp() {
+    const url = `https://wa.me/${waDigits}?text=${encodeURIComponent(enquiryText())}`;
+    const win = window.open(url, '_blank');
+    if (win) win.opener = null;
+    else window.location.href = url;
+    setSent('whatsapp');
+  }
+
+  function sendEmail() {
+    const subject = `New project enquiry from ${name || 'website visitor'}`;
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(enquiryText())}`;
+    setSent('email');
+  }
+
   function onSubmit(e) {
     e.preventDefault();
-    const subject = `New project enquiry from ${name || 'website visitor'}`;
-    const body = `Name: ${name}\nPhone / WhatsApp / Email: ${contact}\nProject type: ${type}\n\n${message}`;
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const via = e.nativeEvent?.submitter?.dataset?.via;
+    if (via === 'email' || !waDigits) sendEmail();
+    else sendWhatsApp();
   }
 
   return (
@@ -54,7 +83,25 @@ export default function ContactForm({ email, options }) {
           placeholder="Key features you need, target timeline, or the business workflow you want to digitize…"
         />
       </label>
-      <button type="submit" className="btn primary full">Send project enquiry</button>
+      <div className="form-actions">
+        {waDigits && (
+          <button type="submit" data-via="whatsapp" className="btn primary">
+            Send on WhatsApp
+          </button>
+        )}
+        {email && (
+          <button type="submit" data-via="email" className={waDigits ? 'btn' : 'btn primary'}>
+            Send by email
+          </button>
+        )}
+      </div>
+      {sent && (
+        <p className="form-note" role="status">
+          {sent === 'whatsapp'
+            ? 'WhatsApp opened with your enquiry. Just press send there.'
+            : 'Your email app opened with the enquiry. Just press send there.'}
+        </p>
+      )}
     </form>
   );
 }
