@@ -1,0 +1,276 @@
+{
+  "brand": "DNS Software",
+  "brandShort": "DNS",
+  "headline": "Android apps that run real businesses",
+  "tagline": "We design and build fast, modern Android apps for shops, factories and startups — from billing and inventory to AI-powered features.",
+  "location": "Madhya Pradesh, India · Working with clients everywhere",
+  "links": {
+    "email": "dn.sandeeep@gmail.com",
+    "whatsapp": "",
+    "linkedin": "https://www.linkedin.com/in/dn-sandeeep/",
+    "github": "https://github.com/dn-sandeeep",
+    "medium": "https://medium.com/@dn.sandeeep"
+  },
+  "stats": [
+    {
+      "value": "4+",
+      "label": "Apps built and shipped"
+    },
+    {
+      "value": "100% Native",
+      "label": "Kotlin & Jetpack Compose"
+    },
+    {
+      "value": "End-to-End",
+      "label": "From Figma UI to Play Store launch"
+    }
+  ],
+  "services": [
+    {
+      "title": "Custom Business & ERP Apps",
+      "text": "Replace manual registers and scattered spreadsheets with an Android app built for your inventory, billing, PDF invoicing, fleet or shop and worker management.",
+      "points": [
+        "Offline-first database with cloud sync",
+        "Instant GST / non-GST PDF bills",
+        "Role-based owner and staff access"
+      ],
+      "cta": "Discuss a business app",
+      "formOption": "Custom business / ERP app"
+    },
+    {
+      "title": "Startup MVP Development",
+      "text": "From Figma wireframes to a production-ready Google Play launch. Fast, scalable native apps built for real users and investor demos.",
+      "points": [
+        "Pixel-perfect Jetpack Compose UI",
+        "Firebase / REST API and login integration",
+        "Complete Play Console release support"
+      ],
+      "cta": "Launch your MVP",
+      "formOption": "Startup MVP"
+    },
+    {
+      "title": "Legacy App Modernization",
+      "text": "Upgrade slow, crash-prone Java/XML Android apps into modern Kotlin, Jetpack Compose and clean MVVM architecture with Material 3 design.",
+      "points": [
+        "XML to Jetpack Compose migration",
+        "Android 15/16 target SDK compliance",
+        "ANR / crash reduction and speed tuning"
+      ],
+      "cta": "Modernize an existing app",
+      "formOption": "Modernize an existing app"
+    },
+    {
+      "title": "AI Features",
+      "text": "Voice entries and smart queries with Gemini and Android's newest app frameworks, built into your app.",
+      "points": [
+        "Voice-driven entries with Gemini",
+        "Android 16 App Functions integration",
+        "Smart questions on your own app data"
+      ],
+      "cta": "Add AI to your app",
+      "formOption": "App with AI features"
+    },
+    {
+      "title": "Firebase & Real-time Sync",
+      "text": "Cloud backends, user roles and live data synced across every phone in your team.",
+      "points": [
+        "Live data across every device",
+        "Owner approval workflows for staff",
+        "Firebase Auth, Firestore and Cloud sync"
+      ],
+      "cta": "Talk about your backend",
+      "formOption": "Firebase / real-time sync"
+    },
+    {
+      "title": "Play Store Launch & Support",
+      "text": "App signing, releases, version updates and analytics. We handle the launch and keep the app healthy.",
+      "points": [
+        "App signing and store listing",
+        "Version updates and bug fixes",
+        "Crash and usage analytics"
+      ],
+      "cta": "Get launch support",
+      "formOption": "Play Store launch & support"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "madhav-stone",
+      "name": "Madhav Stone ERP",
+      "category": "Industrial · Factory & Inventory",
+      "client": "Client project for Madhav Stones Pvt. Ltd.",
+      "accent": "#F2B654",
+      "summary": "End-to-end inventory, stock and production tracking for a granite and marble business, with instant native PDF invoicing.",
+      "description": "A production-grade inventory and factory app for a stone-processing company. Every stage of stone processing syncs in real time across all devices on the factory floor, each team member sees only what their role allows, and sales and vendor reports export as PDFs straight from the app.",
+      "features": [
+        "Replaces paper measurement books for granite / marble block and slab inventory",
+        "Instant itemized PDF bills and stock challans, ready to share on WhatsApp",
+        "Role-based access for Admin, Managers, Liners and Supervisors",
+        "Real-time sync of stone processing stages across devices (Firebase Firestore)",
+        "Live dashboards and machine-status views built with Jetpack Compose and StateFlow"
+      ],
+      "tech": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Firebase",
+        "Firestore",
+        "StateFlow",
+        "Native PDF"
+      ],
+      "screens": [],
+      "links": {
+        "playStore": "",
+        "github": "https://github.com/dn-sandeeep/Madhav-Stone-README"
+      },
+      "type": "business"
+    },
+    {
+      "slug": "gandhi-money-ai",
+      "name": "Gandhi Money AI",
+      "category": "Finance · AI",
+      "client": "Published on Google Play",
+      "accent": "#7BD88F",
+      "summary": "A personal expense and transaction manager with an offline-first database — add entries and ask questions by voice.",
+      "description": "An AI-integrated finance manager. Using Android 16's appFunctions framework, users add expenses and ask financial questions by voice through the Gemini AI agent. Material 3 dashboards with dynamic charts show spending trends and budget goals.",
+      "features": [
+        "Sub-second offline transaction logging, no cloud wait and no forced sign-up",
+        "Voice-driven entries and money questions through Gemini (Android 16 App Functions)",
+        "Interactive Material 3 dashboards with spending-trend and budget charts",
+        "Clean MVVM architecture with Hilt and Room"
+      ],
+      "tech": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Room",
+        "Hilt",
+        "Material 3",
+        "Android 16 App Functions"
+      ],
+      "screens": [],
+      "links": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.sandeep.personalfinancecompanion",
+        "github": "https://github.com/dn-sandeeep/Personal-Finance-Companion"
+      },
+      "type": "live"
+    },
+    {
+      "slug": "silent-zone",
+      "name": "Silent Zone",
+      "category": "Utility · Automation",
+      "client": "Published on Google Play",
+      "accent": "#46D6C8",
+      "summary": "Switches your phone to silent, vibrate or normal automatically — based on where you are.",
+      "description": "An automation app that changes the phone's sound profile on its own using geofencing and Wi-Fi triggers. Background work is tuned with WorkManager and Broadcast Receivers so it stays reliable while using very little battery, and it handles Android's strict background-location and Do Not Disturb permissions properly.",
+      "features": [
+        "Ends manual phone muting in offices, temples / mosques, classrooms and meetings",
+        "Automatic Silent / Vibrate / Normal switching from geofencing and Wi-Fi triggers",
+        "Battery-friendly background work (WorkManager, Broadcast Receivers)",
+        "Correct handling of background-location and Do Not Disturb permissions"
+      ],
+      "tech": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Geofencing API",
+        "WorkManager",
+        "Material 3"
+      ],
+      "screens": [],
+      "links": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.sandeep.silentzone",
+        "github": "https://github.com/dn-sandeeep/Silent-Zone"
+      },
+      "type": "live"
+    },
+    {
+      "slug": "groow",
+      "name": "Groow",
+      "category": "Retail · Billing & Stock",
+      "client": "Shop management app",
+      "accent": "#4FC3F7",
+      "summary": "Billing, stock and udhaar (customer credit) for small shops — all from one phone.",
+      "description": "Groow lets shop owners run their counter from a phone: make bills, keep stock up to date and track udhaar (customer credit) in one place. A fresh light and dark redesign is on the way.",
+      "features": [
+        "Fast billing at the counter",
+        "Stock tracking",
+        "Udhaar (credit) ledger for customers",
+        "Light and dark themes (redesign in progress)"
+      ],
+      "tech": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android"
+      ],
+      "screens": [],
+      "links": {
+        "playStore": "",
+        "github": ""
+      },
+      "type": "business"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discuss",
+      "text": "We understand your business, your users and what the app must do."
+    },
+    {
+      "step": "02",
+      "title": "Design",
+      "text": "Screens and flows you can see and approve before we write code."
+    },
+    {
+      "step": "03",
+      "title": "Build",
+      "text": "Kotlin + Jetpack Compose development with regular builds you can test on your phone."
+    },
+    {
+      "step": "04",
+      "title": "Launch & Support",
+      "text": "Play Store release, updates and fixes after launch."
+    }
+  ],
+  "availability": "India (IST) · Remote & on-site for business clients",
+  "stack": [
+    {
+      "group": "Core & UI",
+      "items": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material 3",
+        "Android SDK",
+        "App Functions (Android 16)"
+      ]
+    },
+    {
+      "group": "Architecture & Async",
+      "items": [
+        "MVVM",
+        "Clean Architecture",
+        "Coroutines",
+        "StateFlow / Flow",
+        "Hilt / Koin DI"
+      ]
+    },
+    {
+      "group": "Data & Backend",
+      "items": [
+        "Room Database",
+        "Firebase Suite",
+        "Ktor Client",
+        "Retrofit",
+        "WorkManager"
+      ]
+    },
+    {
+      "group": "Tools & Platform APIs",
+      "items": [
+        "Android Studio",
+        "Google Play Console",
+        "Geofencing API",
+        "Native PDF Engine",
+        "Git / GitHub & Figma"
+      ]
+    }
+  ]
+}
