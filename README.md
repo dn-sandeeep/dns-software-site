@@ -1,7 +1,8 @@
 # DNS Software — Company Website
 
 A Next.js (App Router) website with a dark, modern design. It can be hosted free on Vercel.
-Sections: Hero · Services · Our Work (4 apps, with filter) · Tech Stack · Process · Contact form.
+Sections: Hero · Services · Our Work (4 apps, with filter) · Tech Stack · Process · FAQ · Contact form (WhatsApp / email), plus a floating WhatsApp button.
+Link preview image: `app/opengraph-image.png` · Icon: `app/icon.png`.
 
 ## Where to edit the content
 
@@ -22,7 +23,9 @@ Sections: Hero · Services · Our Work (4 apps, with filter) · Tech Stack · Pr
    - With no screenshots, a designed phone mockup is shown instead.
 5. **Tech Stack** (`stack`): the four groups of technologies.
 6. **Availability** (`availability`): the location line in the contact section.
-7. To add a new app, copy one block in `projects` and edit it (keep the `slug` short with no spaces, e.g. `"my-app"`).
+7. **FAQ** (`faq`): questions and answers shown above the contact form.
+8. **siteUrl**: the live address, used for link previews and the sitemap. Change it if you add your own domain.
+9. To add a new app, copy one block in `projects` and edit it (keep the `slug` short with no spaces, e.g. `"my-app"`).
 
 JSON tips: separate entries with a comma `,` and keep text inside double quotes `" "`. If something is wrong, `npm run build` will show the error.
 
